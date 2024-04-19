@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.f5 {
+  font-weight: 500;
+}
+
+.f6 {
+  font-weight: 600;
+}
+
+.t3 {
+  transition: all 0.3s;
+}
+
+.delete {
+  animation: animation;
+  animation-duration: 1s;
+}
+
+@keyframes animation {
+  0% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
